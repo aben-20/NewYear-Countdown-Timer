@@ -5,30 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountdownTimer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Countdown to New Year - 2022</h1>
-    <div class="countdown-container">
-        <div class="countdown-el days-c">
-            <p class="big-text" id="days">0</p>
-            <span>days</span>
+        <div class="countdown-container">
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>hours</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>mins</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>seconds</span>
+            </div>
         </div>
-        <div class="countdown-el hours-c">
-            <p class="big-text" id="hours">0</p>
-            <span>hours</span>
+        <div class="container">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days"></div>
+            </div>
         </div>
-        <div class="countdown-el mins-c">
-            <p class="big-text" id="mins">0</p>
-            <span>mins</span>
-        </div>
-        <div class="countdown-el seconds-c">
-            <p class="big-text" id="seconds">0</p>
-            <span>seconds</span>
-        </div>
-    </div>
-    <div class=curDate>
-        <p class="big-text" id="_date">date</p>
-    </div> 
 </body>
 </html>
