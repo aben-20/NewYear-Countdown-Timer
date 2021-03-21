@@ -27,7 +27,9 @@ function double_zeros(time) {
 
 const date = new Date();
 const renderCalendar = () => {
+
   date.setDate(1);
+  
   const monthDays = document.querySelector(".days");
 
   const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
@@ -41,7 +43,7 @@ const renderCalendar = () => {
   const nextDays = 7 - lastDayIndex - 1;
 
   const months = ["January","February","March","April","May","June","July","August",
-  "September","October","November","December"];
+    "September","October","November","December"];
 
   document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
@@ -54,8 +56,7 @@ const renderCalendar = () => {
   }
 
   for (let i = 1; i <= lastDay; i++) {
-    if (i === new Date().getDate() &&date.getMonth() === new Date().getMonth())
-     {
+    if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()){
       days += `<div class="today">${i}</div>`;
     } else {
       days += `<div>${i}</div>`;
